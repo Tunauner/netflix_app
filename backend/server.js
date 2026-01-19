@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import express from "express";
 import cookieParser from "cookie-parser";
 import path from "path";
@@ -10,6 +13,7 @@ import searchRoutes from "./routes/search.route.js";
 import { ENV_VARS } from "./config/envVars.js";
 import { connectDB } from "./config/db.js";
 import { protectRoute } from "./middleware/protectRoute.js";
+
 
 const app = express();
 
